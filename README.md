@@ -24,6 +24,10 @@ lets you log a progress bar xlua style, last argument lets you choose which line
 lets you log a message the line you want. message will be truncated to terminal length, in order to fit on one line.
 For long messages, you can split your message in 2 lines.
 
+`mp.erase(line)`
+
+erases the line and the progress bar if any. Can be useful if you want to log messages with tabs (which will overlap with previous text)
+
 `mp.resetProgress()`
 
 lets you start from scratch a new print zone. You should print it as soon as you have finished your progress operation, to flush print zone
@@ -47,7 +51,7 @@ end
 mp.resetProgress()
 ```
 
-Second example shows you how to log dynamix messages above progress bars.
+Second example shows you how to log dynamic messages above progress bars.
 
 ```lua
 mp = require 'multiprogress'

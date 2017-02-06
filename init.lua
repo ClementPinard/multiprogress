@@ -195,6 +195,13 @@ do
       io.write('\27['..linesNumber..'B')
       io.flush()
    end
+   
+   function multiprogress.erase(index)
+     barDoneList[index] = true
+     previousList[index] = -1
+     multiprogress.info('\27[K',index)
+   end
+   
 end
 
 return multiprogress
