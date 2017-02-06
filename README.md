@@ -14,6 +14,8 @@ $ luarocks make
 
 ## Use
 
+### For a thorough example (imagenet training), go [here](https://github.com/ClementPinard/imagenet-multiGPU.torch)
+
 This extension allows you to log multiple progress bars and info messages on several lines without
 having to reprint everything every time.
 
@@ -75,4 +77,4 @@ end
 mp.resetProgress()
 
 ```
-For a thorough example, go [here](https://github.com/ClementPinard/imagenet-multiGPU.torch)
+
