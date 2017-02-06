@@ -1,5 +1,7 @@
 # Multi levels progress logging extension for torch
 
+![img](https://github.com/ClementPinard/imagenet-multiGPU.torch/raw/master/images/multiprogress.png)
+
 ## Dependencies:
 Torch7 (www.torch.ch)
 xlua
@@ -73,3 +75,4 @@ end
 mp.resetProgress()
 
 ```
+For a thorough example, go [here](https://github.com/ClementPinard/imagenet-multiGPU.torch)
