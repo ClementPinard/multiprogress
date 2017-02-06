@@ -197,9 +197,11 @@ do
    end
    
    function multiprogress.erase(index)
-     barDoneList[index] = true
-     previousList[index] = -1
-     multiprogress.info('\27[K',index)
+     if linesNumber >= index then
+       barDoneList[index] = true
+       previousList[index] = -1
+       multiprogress.info('\27[K',index)
+     end
    end
    
 end
